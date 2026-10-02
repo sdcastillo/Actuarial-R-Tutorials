@@ -1,0 +1,28 @@
+# SamWiki theme contract
+# Theme setup follows GitHub's Jekyll theme guide:
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+#
+# Strategy: one supported theme, jekyll-theme-cayman, skinned in assets/css/style.scss.
+# Copied from the SamWiki hub (sdcastillo/sdcastillo.github.io, samwiki-hub):
+#   assets/css/style.scss
+#   _layouts/default.html
+#   _includes/head-custom.html
+#   _includes/samwiki-nav.html
+# and `samwiki: true` on the main page.
+#
+# This is a project site. Pages should publish from the default branch (`master`)
+# at the repository root:
+# https://sdcastillo.github.io/Actuarial-R-Tutorials/
+
+title: Actuarial R Tutorials
+description: Worked R notes for deploying a GLM as an Excel formula.
+theme: jekyll-theme-cayman
+show_downloads: false
+markdown: kramdown
+url: https://sdcastillo.github.io
+baseurl: /Actuarial-R-Tutorials
+
+# Session debris stays in the repo and off the published site.
+exclude:
+  - debug.log
+  - "Convert R GLM to Excel.Rproj"
