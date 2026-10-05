@@ -1,0 +1,30 @@
+# Add a card by appending an entry. href is a site path (leading slash).
+# style is "live" for the primary open button, "source" for the outline button.
+- title: Excelerating the Production Pipeline
+  lang: HTML
+  badge: Tutorial
+  description: Rendered prettydoc of the four steps, the coefficient table, the formula, and the two Excel figures.
+  href: /Convert_R_GLM_to_Excel.html
+  action: Open
+  style: live
+- title: Notebook render
+  lang: Notebook
+  badge: ""
+  description: R Notebook HTML of the same walkthrough, with the source embed and the workbook screenshots inline.
+  href: /Convert%20R%20GLM%20to%20Excel.nb.html
+  action: Open
+  style: source
+- title: R Markdown source
+  lang: R
+  badge: ""
+  description: Knit this file to rebuild the HTML and overwrite the sample workbook.
+  href: /Convert%20R%20GLM%20to%20Excel.Rmd
+  action: Source
+  style: source
+- title: R GLM in Excel
+  lang: Excel
+  badge: ""
+  description: Workbook with the coefficients sheet and the R predictions, ready for the verification formula.
+  href: /R%20GLM%20in%20Excel.xlsx
+  action: Download
+  style: source

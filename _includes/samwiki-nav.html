@@ -1,6 +1,7 @@
 <nav class="sw-nav" aria-label="{{ include.label | default: 'Site' }}">
   <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}aria-current="page"{% endif %}>Home</a>
   <a href="{{ '/Convert_R_GLM_to_Excel.html' | relative_url }}">Tutorial</a>
+  <a href="{{ '/contributing/' | relative_url }}" {% if page.url == '/contributing/' %}aria-current="page"{% endif %}>Contribute</a>
   <a href="https://sdcastillo.github.io/samwiki/">SamWiki</a>
   <a href="https://sdcastillo.github.io/">Sam Castillo</a>
   <a href="https://github.com/sdcastillo/Actuarial-R-Tutorials">GitHub</a>

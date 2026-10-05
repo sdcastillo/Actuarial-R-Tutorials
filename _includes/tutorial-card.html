@@ -1,0 +1,13 @@
+<article class="sw-card">
+  <div class="sw-card-top">
+    <h3 class="sw-name"><a href="{{ include.item.href | relative_url }}">{{ include.item.title }}</a></h3>
+    <span class="sw-lang">{{ include.item.lang }}</span>
+  </div>
+  {% if include.item.badge != blank %}
+    <p class="sw-badge">{{ include.item.badge }}</p>
+  {% endif %}
+  <p class="sw-desc">{{ include.item.description }}</p>
+  <div class="sw-actions">
+    <a class="sw-btn sw-btn-{{ include.item.style | default: 'source' }}" href="{{ include.item.href | relative_url }}">{{ include.item.action | default: 'Open' }}</a>
+  </div>
+</article>

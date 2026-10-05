@@ -13,7 +13,7 @@ samwiki: true
 
 <p>That formula is the log link solved for the mean. From <code>log(Y) = β0 + β1 X1 + β2 log(X2)</code> the cell is <code>exp(β0 + β1 X1) × X2^β2</code>, and each beta is read from the coefficients sheet. On this fit those values are about −1.835, 0.053, and 1.369. Keeping them in cells means a refit updates the workbook without retyping constants. The same export covers other <code>glm</code> families; a logistic model uses <code>family = binomial(link = "logit")</code>.</p>
 
-<p>Sam Castillo wrote the tutorial in 2019 while studying mathematics at UMass Amherst. These pages keep that note — the R Markdown, the notebook render, the sample workbook, and the Excel screenshots — and add a front door on GitHub Pages.</p>
+<p>Sam Castillo wrote the tutorial in 2019 while studying mathematics at UMass Amherst. These pages keep that note — the R Markdown, the notebook render, the sample workbook, and the Excel screenshots. People working on the project now add further notes through the tutorial list and add their names to the people list, so the home page stays current.</p>
 
 <h2>What you can take from it</h2>
 <ul>
@@ -27,45 +27,22 @@ samwiki: true
 
 <h2>Open the tutorial</h2>
 <div class="sw-grid">
+  {% for item in site.data.tutorials %}
+    {% include tutorial-card.html item=item %}
+  {% endfor %}
+</div>
+
+<h2>People working on this</h2>
+<p>Names come from <code>_data/people.yml</code>. If you are working on these notes, add yourself there. The steps are on the <a href="{{ '/contributing/' | relative_url }}">contribute page</a>.</p>
+<div class="sw-grid">
+  {% for person in site.data.people %}
   <article class="sw-card">
     <div class="sw-card-top">
-      <h3 class="sw-name"><a href="{{ '/Convert_R_GLM_to_Excel.html' | relative_url }}">Excelerating the Production Pipeline</a></h3>
-      <span class="sw-lang">HTML</span>
+      <h3 class="sw-name">
+        {% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}
+      </h3>
     </div>
-    <p class="sw-badge">Tutorial</p>
-    <p class="sw-desc">Rendered prettydoc of the four steps, the coefficient table, the formula, and the two Excel figures.</p>
-    <div class="sw-actions">
-      <a class="sw-btn sw-btn-live" href="{{ '/Convert_R_GLM_to_Excel.html' | relative_url }}">Open</a>
-    </div>
+    <p class="sw-desc">{{ person.role }}</p>
   </article>
-  <article class="sw-card">
-    <div class="sw-card-top">
-      <h3 class="sw-name"><a href="{{ '/Convert%20R%20GLM%20to%20Excel.nb.html' | relative_url }}">Notebook render</a></h3>
-      <span class="sw-lang">Notebook</span>
-    </div>
-    <p class="sw-desc">R Notebook HTML of the same walkthrough, with the source embed and the workbook screenshots inline.</p>
-    <div class="sw-actions">
-      <a class="sw-btn sw-btn-source" href="{{ '/Convert%20R%20GLM%20to%20Excel.nb.html' | relative_url }}">Open</a>
-    </div>
-  </article>
-  <article class="sw-card">
-    <div class="sw-card-top">
-      <h3 class="sw-name"><a href="{{ '/Convert%20R%20GLM%20to%20Excel.Rmd' | relative_url }}">R Markdown source</a></h3>
-      <span class="sw-lang">R</span>
-    </div>
-    <p class="sw-desc">Knit this file to rebuild the HTML and overwrite the sample workbook.</p>
-    <div class="sw-actions">
-      <a class="sw-btn sw-btn-source" href="{{ '/Convert%20R%20GLM%20to%20Excel.Rmd' | relative_url }}">Source</a>
-    </div>
-  </article>
-  <article class="sw-card">
-    <div class="sw-card-top">
-      <h3 class="sw-name"><a href="{{ '/R%20GLM%20in%20Excel.xlsx' | relative_url }}">R GLM in Excel</a></h3>
-      <span class="sw-lang">Excel</span>
-    </div>
-    <p class="sw-desc">Workbook with the coefficients sheet and the R predictions, ready for the verification formula.</p>
-    <div class="sw-actions">
-      <a class="sw-btn sw-btn-source" href="{{ '/R%20GLM%20in%20Excel.xlsx' | relative_url }}">Download</a>
-    </div>
-  </article>
+  {% endfor %}
 </div>
