@@ -8,6 +8,8 @@ permalink: /contributing/
 
 <p class="sw-intro">The 2019 GLM-to-Excel note stays as it is. New work is added beside it. The home page reads two lists, so a new tutorial or a new name shows up without editing the layout.</p>
 
+<p>The header and footer use the shared SamWiki links: Home, Running, About, Code, Hire, GitHub, and Linktree. Leave <code>_includes/samwiki-nav.html</code> on that set. A new tutorial is linked from <code>_data/tutorials.yml</code>, which the home page already renders.</p>
+
 <h2>Add a tutorial</h2>
 <ol>
   <li>Branch from <code>master</code>.</li>

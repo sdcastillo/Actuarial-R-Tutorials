@@ -3,7 +3,7 @@
     <h3 class="sw-name"><a href="{{ include.item.href | relative_url }}">{{ include.item.title }}</a></h3>
     <span class="sw-lang">{{ include.item.lang }}</span>
   </div>
-  {% if include.item.badge != blank %}
+  {% if include.item.badge.size > 0 %}
     <p class="sw-badge">{{ include.item.badge }}</p>
   {% endif %}
   <p class="sw-desc">{{ include.item.description }}</p>
