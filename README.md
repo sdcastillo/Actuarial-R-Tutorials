@@ -12,7 +12,7 @@ Open the rendered tutorial, or rerun `Convert R GLM to Excel.Rmd`. Load tidyvers
 
 That formula is the log link solved for the mean. From `log(Y) = β0 + β1 X1 + β2 log(X2)` the cell is `exp(β0 + β1 X1) × X2^β2`, and each beta is read from the coefficients sheet. On this fit those values are about −1.835, 0.053, and 1.369. Keeping them in cells means a refit updates the workbook without retyping constants. The same export covers other `glm` families; a logistic model uses `family = binomial(link = "logit")`.
 
-Sam Castillo wrote the tutorial in 2019 while studying mathematics at UMass Amherst. This repository keeps that note — the R Markdown, the notebook render, the sample workbook, and the Excel screenshots.
+Sam Castillo wrote the tutorial in 2019 while studying mathematics at UMass Amherst. This repository keeps that note — the R Markdown, the notebook render, the sample workbook, and the Excel screenshots. People working on the project now add further notes through `_data/tutorials.yml` and add their names in `_data/people.yml`.
 
 ## What you can take from it
 
@@ -29,5 +29,9 @@ Sam Castillo wrote the tutorial in 2019 while studying mathematics at UMass Amhe
 - [Notebook render](Convert%20R%20GLM%20to%20Excel.nb.html)
 - [R Markdown source](Convert%20R%20GLM%20to%20Excel.Rmd)
 - [Sample workbook](R%20GLM%20in%20Excel.xlsx)
+
+## Working on this
+
+Add a tutorial by appending `_data/tutorials.yml`. Add your name in `_data/people.yml`. The steps are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Part of [SamWiki](https://sdcastillo.github.io/samwiki/).
