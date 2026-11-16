@@ -30,4 +30,10 @@ Sam Castillo wrote the tutorial in 2019 while studying mathematics at UMass Amhe
 - [R Markdown source](Convert%20R%20GLM%20to%20Excel.Rmd)
 - [Sample workbook](R%20GLM%20in%20Excel.xlsx)
 
-Part of [SamWiki](https://sdcastillo.github.io/samwiki/).
+## Add a note
+
+The home page reads `_data/tutorials.yml`, `_data/videos.yml`, and `_data/people.yml`. Append an entry instead of editing the layout. The steps are in [contributing.md](contributing.md) and on the [contribute page](https://sdcastillo.github.io/Actuarial-R-Tutorials/contributing/).
+
+Leave `_includes/samwiki-nav.html` on Home, Running, About, Code, Hire, GitHub, and Linktree.
+
+Part of [SamWiki](https://sdcastillo.github.io/).
