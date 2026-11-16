@@ -236,8 +236,34 @@ body.samwiki .sw-jumps a:hover {
   text-decoration: none;
 }
 
-body.samwiki .sw-section {
+body.samwiki .sw-section,
+body.samwiki .sw-videos {
   margin-top: 2.35rem;
+}
+
+body.samwiki .sw-frame {
+  position: relative;
+  margin: 1rem 0 1.25rem;
+  padding-top: 56.25%;
+  overflow: hidden;
+  background: #0c1330;
+  border: 1px solid var(--sw-line);
+  border-radius: 18px;
+  box-shadow: var(--sw-shadow);
+}
+
+body.samwiki .sw-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+body.samwiki .sw-card-person .sw-desc {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
 }
 
 body.samwiki .sw-section-head h2 {

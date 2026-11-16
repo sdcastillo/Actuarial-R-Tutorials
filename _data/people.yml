@@ -1,0 +1,6 @@
+# Append your name when you add a tutorial, a video, or a correction.
+# url and url_label are optional.
+- name: Sam Castillo
+  role: Wrote the 2019 GLM-to-Excel tutorial while studying mathematics at UMass Amherst.
+  url: https://github.com/sdcastillo
+  url_label: GitHub

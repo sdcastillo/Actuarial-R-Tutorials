@@ -1,0 +1,8 @@
+# Append a video here. Set embed when the home page should show a player.
+- title: "Mastering GLM Link Functions: A Comprehensive Guide"
+  url: https://www.youtube.com/watch?v=xDJXuoM6ZCI
+  host: YouTube
+  embed: https://www.youtube.com/embed/xDJXuoM6ZCI
+- title: Fast Data Manipulation - R Tutorial
+  url: https://rumble.com/v7forjc-fast-data-manipulation-r-tutorial.html
+  host: Rumble
